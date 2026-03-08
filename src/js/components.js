@@ -205,14 +205,14 @@ export function renderNavbar(activePage = '') {
 
   nav.innerHTML = `
     <div class="navbar__inner">
-      <a href="${prefix}index.html" class="navbar__logo" aria-label="Cloud Clinic Home">
+      <a href="/" class="navbar__logo" aria-label="Cloud Clinic Home">
         <img src="${prefix}images/logo.jpg" alt="Cloud Clinic" class="navbar__logo-img">
       </a>
       <div class="navbar__links" id="navLinks">
-        <a href="${prefix}index.html" class="navbar__link ${activePage === 'home' ? 'active' : ''}">หน้าแรก</a>
-        <a href="${prefix}iv-drip-menu.html" class="navbar__link ${activePage === 'menu' ? 'active' : ''}">เมนูดริปผิว</a>
-        <a href="${prefix}reviews.html" class="navbar__link ${activePage === 'reviews' ? 'active' : ''}">รีวิว</a>
-        <a href="${prefix}about.html" class="navbar__link ${activePage === 'about' ? 'active' : ''}">เกี่ยวกับเรา</a>
+        <a href="/" class="navbar__link ${activePage === 'home' ? 'active' : ''}">หน้าแรก</a>
+        <a href="/iv-drip-menu/" class="navbar__link ${activePage === 'menu' ? 'active' : ''}">เมนูดริปผิว</a>
+        <a href="/reviews/" class="navbar__link ${activePage === 'reviews' ? 'active' : ''}">รีวิว</a>
+        <a href="/about/" class="navbar__link ${activePage === 'about' ? 'active' : ''}">เกี่ยวกับเรา</a>
         <a href="${CONTACT.lineLink}" target="_blank" class="btn btn--line btn--sm navbar__cta">💬 แชท LINE</a>
       </div>
       <button class="navbar__hamburger" id="hamburger" aria-label="เมนู">
@@ -279,16 +279,16 @@ export function renderFooter() {
         </div>
         <div>
           <h4 class="footer__heading">เมนูบริการ</h4>
-          <a href="${prefix}iv-drip-menu.html" class="footer__link">💧 เมนูดริปผิวทั้งหมด</a>
-          <a href="${prefix}iv-drip/vitality-skin.html" class="footer__link">Vitality Skin</a>
-          <a href="${prefix}iv-drip/renewal-skin.html" class="footer__link">Renewal Skin</a>
-          <a href="${prefix}iv-drip/perfection-skin.html" class="footer__link">Perfection Skin</a>
-          <a href="${prefix}iv-drip/celebrity-skin.html" class="footer__link">Celebrity Skin</a>
-          <a href="${prefix}iv-drip/glow-and-clear.html" class="footer__link">Glow & Clear Drip</a>
-          <a href="${prefix}iv-drip/immune-booster.html" class="footer__link">Immune Booster Drip</a>
+          <a href="/iv-drip-menu/" class="footer__link">💧 เมนูดริปผิวทั้งหมด</a>
+          <a href="/iv-drip/vitality-skin/" class="footer__link">Vitality Skin</a>
+          <a href="/iv-drip/renewal-skin/" class="footer__link">Renewal Skin</a>
+          <a href="/iv-drip/perfection-skin/" class="footer__link">Perfection Skin</a>
+          <a href="/iv-drip/celebrity-skin/" class="footer__link">Celebrity Skin</a>
+          <a href="/iv-drip/glow-and-clear/" class="footer__link">Glow & Clear Drip</a>
+          <a href="/iv-drip/immune-booster/" class="footer__link">Immune Booster Drip</a>
           <h4 class="footer__heading" style="margin-top: var(--space-6)">เพิ่มเติม</h4>
-          <a href="${prefix}reviews.html" class="footer__link">⭐ รีวิวลูกค้า</a>
-          <a href="${prefix}about.html" class="footer__link">ℹ️ เกี่ยวกับเรา</a>
+          <a href="/reviews/" class="footer__link">⭐ รีวิวลูกค้า</a>
+          <a href="/about/" class="footer__link">ℹ️ เกี่ยวกับเรา</a>
         </div>
         <div>
           <h4 class="footer__heading">ติดต่อเรา</h4>
