@@ -38,9 +38,9 @@ async function processDirectory(dirPath) {
                 }
 
                 if (ext === '.jpg' || ext === '.jpeg') {
-                    pipeline = pipeline.jpeg({ quality: QUALITY, progressive: true });
+                    pipeline = pipeline.webp({ quality: QUALITY, progressive: true });
                 } else if (ext === '.png') {
-                    pipeline = pipeline.png({ quality: QUALITY, compressionLevel: 8 });
+                    pipeline = pipeline.webp({ quality: QUALITY, compressionLevel: 8 });
                 }
 
                 await pipeline.toFile(tempPath);

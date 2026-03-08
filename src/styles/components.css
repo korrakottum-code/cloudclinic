@@ -233,7 +233,7 @@
     overflow: hidden;
     padding-top: 72px;
     background: var(--gradient-hero);
-    background-image: url('/images/hero-bg.png');
+    background-image: url('/images/hero-bg.webp');
     background-size: cover;
     background-position: center;
 }
@@ -896,7 +896,7 @@
 .page-header {
     padding: calc(72px + var(--space-10)) 0 var(--space-10);
     background: var(--gradient-cloud);
-    background-image: url('/images/hero-bg.png');
+    background-image: url('/images/hero-bg.webp');
     background-size: cover;
     background-position: center;
     color: var(--color-text);

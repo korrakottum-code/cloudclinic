@@ -7,7 +7,7 @@ function generateStandardDrips(prefix) {
         html += `
         <a href="${prefix}iv-drip/${drip.id}/" class="drip-card" style="text-decoration:none; color:inherit; display:flex; flex-direction:column;">
           <div class="drip-card__image-wrapper">
-            <img src="${prefix}images/${drip.id}.jpg" alt="${drip.name}" class="drip-card__image" loading="lazy">
+            <img src="${prefix}images/${drip.id}.webp" alt="${drip.name}" class="drip-card__image" loading="lazy">
             <div class="drip-card__badge" style="background: var(--color-primary)">${drip.badge}</div>
           </div>
           <div class="drip-card__content" style="flex:1; display:flex; flex-direction:column;">
@@ -21,7 +21,7 @@ function generateStandardDrips(prefi 2
 function generateS       let html = '';
     IV_DRIPS.standarla    IV_DRIPS.stanin        html += `
         <a href="${prefix??       <a href=            <div class="drip-card__image-wrapper">
-            <img src="${prefix}images/${drip.id}.jpg" alt="${drip.name}" class="drip-card__image"              <img src="${prefix}images/${drip.id l            <div class="drip-card__badge" style="background: var(--color-primary)">${drip.badge}</div>
+            <img src="${prefix}images/${drip.id}.webp" alt="${drip.name}" class="drip-card__image"              <img src="${prefix}images/${drip.id l            <div class="drip-card__badge" style="background: var(--color-primary)">${drip.badge}</div>
          {d          </div>
           <div class="drip-card__content" style="flex:1; display:flex; flex-directioco          <div               <h3 class="drip-card__title">${drip.name}</h3>
             <p class="drip-card__deal            <p class="drip-card__desc" style="flex:1">${d
@@ -29,7 +29,7 @@ function generateS       let html = '';
                 <div class="drip-card_import { IV_                  <dar
 function generateStandardDrips(prefi 2
 function generateS       let html = '';
-    IV_DRdrifunction generateS       let html = 'lo    IV_DRIPS.standarla    IV_DRIPS.sta          <a href="${prefix??       <a href=            <d/p            <img src="${prefix}images/${drip.id}.jpg" alt="${drip.nato;">
+    IV_DRdrifunction generateS       let html = 'lo    IV_DRIPS.standarla    IV_DRIPS.sta          <a href="${prefix??       <a href=            <d/p            <img src="${prefix}images/${drip.id}.webp" alt="${drip.nato;">
               <div>
          {d          </div>
           <div class="drip-card__content" style="flex:1; display:flex; flex-directioco          <div               <h3 class="drip-card__title">${drip.name}</h3>

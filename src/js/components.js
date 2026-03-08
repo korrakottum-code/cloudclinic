@@ -6,7 +6,7 @@ export const IV_DRIPS = {
     {
       id: 'vitality-skin',
       emoji: '💧',
-      image: 'images/drips/vitality-skin.jpg',
+      image: 'images/drips/vitality-skin.webp',
       name: 'Vitality Skin',
       price: 990,
       priceText: '990.-',
@@ -20,7 +20,7 @@ export const IV_DRIPS = {
     {
       id: 'renewal-skin',
       emoji: '🌿',
-      image: 'images/drips/renewal-skin.jpg',
+      image: 'images/drips/renewal-skin.webp',
       name: 'Renewal Skin',
       price: 1390,
       priceText: '1,390.-',
@@ -34,7 +34,7 @@ export const IV_DRIPS = {
     {
       id: 'perfection-skin',
       emoji: '✨',
-      image: 'images/drips/perfection-skin.jpg',
+      image: 'images/drips/perfection-skin.webp',
       name: 'Perfection Skin',
       price: 2490,
       priceText: '2,490.-',
@@ -48,7 +48,7 @@ export const IV_DRIPS = {
     {
       id: 'celebrity-skin',
       emoji: '👑',
-      image: 'images/drips/celebrity-skin.jpg',
+      image: 'images/drips/celebrity-skin.webp',
       name: 'Celebrity Skin',
       price: 2990,
       priceText: '2,990.-',
@@ -64,7 +64,7 @@ export const IV_DRIPS = {
     {
       id: 'glow-and-clear',
       emoji: '🌤️',
-      image: 'images/drips/glow-and-clear.jpg',
+      image: 'images/drips/glow-and-clear.webp',
       name: 'Glow & Clear Drip',
       price: 1990,
       priceText: '1,990.-',
@@ -78,7 +78,7 @@ export const IV_DRIPS = {
     {
       id: 'immune-booster',
       emoji: '🛡️',
-      image: 'images/drips/immune-booster.jpg',
+      image: 'images/drips/immune-booster.webp',
       name: 'Immune Booster Drip',
       price: 1990,
       priceText: '1,990.-',
@@ -92,7 +92,7 @@ export const IV_DRIPS = {
     {
       id: 'skin-detox-acne-clear',
       emoji: '💜',
-      image: 'images/drips/skin-detox-acne.jpg',
+      image: 'images/drips/skin-detox-acne.webp',
       name: 'Skin Detox & Acne Clear Drip',
       price: 1990,
       priceText: '1,990.-',
@@ -106,7 +106,7 @@ export const IV_DRIPS = {
     {
       id: 'party-recovery',
       emoji: '🥂',
-      image: 'images/drips/party-recovery.jpg',
+      image: 'images/drips/party-recovery.webp',
       name: 'Party Recovery Drip',
       price: 1990,
       priceText: '1,990.-',
@@ -120,7 +120,7 @@ export const IV_DRIPS = {
     {
       id: 'slim-and-burn',
       emoji: '🏃‍♀️',
-      image: 'images/drips/slim-and-burn.jpg',
+      image: 'images/drips/slim-and-burn.webp',
       name: 'Slim & Burn Drip',
       price: 1990,
       priceText: '1,990.-',
@@ -134,7 +134,7 @@ export const IV_DRIPS = {
     {
       id: 'detox-liver-care',
       emoji: '🌿',
-      image: 'images/drips/detox-liver-care.jpg',
+      image: 'images/drips/detox-liver-care.webp',
       name: 'Detox & Liver Care Drip',
       price: 1990,
       priceText: '1,990.-',
@@ -148,7 +148,7 @@ export const IV_DRIPS = {
     {
       id: 'night-owl',
       emoji: '🦉',
-      image: 'images/drips/night-owl.jpg',
+      image: 'images/drips/night-owl.webp',
       name: 'Night Owl Drip',
       price: 1990,
       priceText: '1,990.-',
@@ -162,7 +162,7 @@ export const IV_DRIPS = {
     {
       id: 'anti-stress-sleep-well',
       emoji: '😴',
-      image: 'images/drips/anti-stress.jpg',
+      image: 'images/drips/anti-stress.webp',
       name: 'Anti-Stress & Sleep Well Drip',
       price: 1990,
       priceText: '1,990.-',
