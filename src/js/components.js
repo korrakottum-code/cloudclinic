@@ -212,6 +212,7 @@ export function renderNavbar(activePage = '') {
         <a href="/" class="navbar__link ${activePage === 'home' ? 'active' : ''}">หน้าแรก</a>
         <a href="/iv-drip-menu/" class="navbar__link ${activePage === 'menu' ? 'active' : ''}">เมนูดริปผิว</a>
         <a href="/reviews/" class="navbar__link ${activePage === 'reviews' ? 'active' : ''}">รีวิว</a>
+        <a href="/blog/" class="navbar__link ${activePage === 'blog' ? 'active' : ''}">บทความ</a>
         <a href="/about/" class="navbar__link ${activePage === 'about' ? 'active' : ''}">เกี่ยวกับเรา</a>
         <a href="${CONTACT.lineLink}" target="_blank" class="btn btn--line btn--sm navbar__cta">💬 แชท LINE</a>
       </div>
