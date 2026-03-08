@@ -30,7 +30,18 @@
 
 ---
 
-## ⚠️ สิ่งที่ควรปรับปรุง
+## ✅ สิ่งที่ปรับปรุงแล้ว (Update ล่าสุด)
+
+✔️ **Favicon ## ⚠️ สิ่งที่ควรปรับปรุง OG Image:** เพิ่ม Favicon และ `og:image` ครบทุกหน้าแล้ว
+✔️ **Clean URLs:** ปรับ URL เป็นแบบไม่มี `.html` ต่อท้าย (Directory-based)
+✔️ **BreadcrumbList JSON-LD:** เพิ่ม schema ของ Breadcrumb ทุกหน้าเรียบร้อย
+✔️ **Google Maps ## ⚠️ สิ่งที่ควรปรับปรุง Logo:** แก้ไขพิกัดแผนที่ให้ตรงและดึง Logo จาก root เสมอ
+✔️ **Google Search Console:** ยืนยันเว็บไซต์และส่ง Sitemap แล้ว
+✔️ **Semantic HTML:** เพิ่ม `<main>` tag เรียบร้อยแล้ว
+
+---
+
+## ⚠️ สิ่งที่ยังต้องปรับปรุงต่อ (ถ้าต้องการ)
 
 ### 🔴 Critical Issues
 
