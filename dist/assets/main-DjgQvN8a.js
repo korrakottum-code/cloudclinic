@@ -1,4 +1,4 @@
-import{i as r,I as e}from"./main-Cwf2sOX-.js";r("home");const d=document.getElementById("standardDrips");e.standard.forEach((a,s)=>{d.innerHTML+=`
+import{i as r,I as e}from"./main-DwkdFymy.js";r("home");const d=document.getElementById("standardDrips");e.standard.forEach((a,s)=>{d.innerHTML+=`
         <a href="./iv-drip/${a.id}/" class="drip-card" style="text-decoration:none; color:inherit; display:flex; flex-direction:column;">
           <div class="drip-card__image">
             <img src="./${a.image}" alt="${a.name}" loading="lazy">

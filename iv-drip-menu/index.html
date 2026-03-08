@@ -257,59 +257,6 @@
     </main>
     <script type="module">
         import { initApp } from '../src/js/main.js';
-        import { IV_DRIPS, ALL_DRIPS } from '../src/js/components.js';
-
-        // Render detailed cards
-        function renderDetailCard(drip, isPremium = false) {
-            return `
-        <div class="drip-card ${isPremium ? 'drip-card--premium' : ''} animate-on-scroll" style="display:flex; flex-direction:column;">
-          <div class="drip-card__image">
-            <img src="./${drip.image}" alt="${drip.name}" loading="lazy">
-          </div>
-          <div style="display:flex; align-items:center; gap:var(--space-3); margin-bottom:var(--space-3);">
-            <span style="font-size:2.5rem;">${drip.emoji}</span>
-            <div>
-              <h3 class="drip-card__name">${drip.name}</h3>
-              <div class="drip-card__price">${drip.priceText} <span>/ ครั้ง</span></div>
-            </div>
-          </div>
-          <div style="margin-bottom:var(--space-3);">
-            <p style="font-size:var(--text-sm); font-weight:600; color:var(--color-text); margin-bottom:var(--space-1);">🎯 เหมาะสำหรับ:</p>
-            <p class="drip-card__desc">${drip.suitable}</p>
-          </div>
-          <div style="margin-bottom:var(--space-3);">
-            <p style="font-size:var(--text-sm); font-weight:600; color:var(--color-text); margin-bottom:var(--space-1);">ช่วยเรื่อง:</p>
-            <p class="drip-card__desc">${drip.benefits}</p>
-          </div>
-          <div class="drip-card__tags">
-            ${drip.tags.map(t => `<span class="drip-card__tag">${t}</span>`).join('')}
-          </div>
-          <div style="margin-top:auto; display:flex; gap:var(--space-2);">
-            <a href="./iv-drip/${drip.id}/" class="btn btn--primary btn--sm" style="flex:1;">ดูรายละเอียด</a>
-            <a href="https://line.me/ti/p/~@Cloud-clinic" target="_blank" class="btn btn--line btn--sm" style="flex:1;">จองเลย</a>
-          </div>
-        </div>
-      `;
-        }
-
-        document.getElementById('standardCards').innerHTML = IV_DRIPS.standard.map(d => renderDetailCard(d)).join('');
-        document.getElementById('premiumCards').innerHTML = IV_DRIPS.premium.map(d => renderDetailCard(d, true)).join('');
-
-        // Comparison table
-        const tbody = document.getElementById('comparisonBody');
-        ALL_DRIPS.forEach(drip => {
-            tbody.innerHTML += `
-        <tr>
-          <td><strong>${drip.emoji} ${drip.name}</strong></td>
-          <td>${drip.group === 'standard' ? 'Standard' : 'Premium'}</td>
-          <td><strong>${drip.priceText}</strong></td>
-          <td>${drip.suitable}</td>
-          <td>${drip.benefits}</td>
-          <td><a href="./iv-drip/${drip.id}/" class="btn btn--primary btn--sm">ดูเพิ่ม</a></td>
-        </tr>
-      `;
-        });
-
         initApp('menu');
     </script>
 </body>
