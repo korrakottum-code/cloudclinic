@@ -206,7 +206,7 @@ export function renderNavbar(activePage = '') {
   nav.innerHTML = `
     <div class="navbar__inner">
       <a href="/" class="navbar__logo" aria-label="Cloud Clinic Home">
-        <img src="${prefix}images/logo.jpg" alt="Cloud Clinic" class="navbar__logo-img">
+        <img src="${prefix}images/logo.jpg" alt="Cloud Clinic" class="navbar__logo-img" width="48" height="48">
       </a>
       <div class="navbar__links" id="navLinks">
         <a href="/" class="navbar__link ${activePage === 'home' ? 'active' : ''}">หน้าแรก</a>
@@ -271,7 +271,7 @@ export function renderFooter() {
       <div class="footer__grid">
         <div>
           <div class="footer__brand">
-            <div class="footer__logo"><img src="${prefix}images/logo.jpg" alt="Cloud Clinic" style="height: 48px; width: auto;"></div>
+            <div class="footer__logo"><img src="${prefix}images/logo.jpg" alt="Cloud Clinic" width="48" height="48" style="height: 48px; width: auto;"></div>
             <p class="footer__desc">ดูแลผิวคุณให้สวยใส ดั่งก้อนเมฆที่นุ่มนวล ☁️🩵<br>คลินิกความงามครบวงจร ดริปผิว IV Drip กว่า 12 สูตร ขอนแก่น</p>
           </div>
           <div class="footer__map">
