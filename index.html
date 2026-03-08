@@ -483,80 +483,8 @@
   </main>
 
   <script type="module">
-    import { initApp, } from './src/js/main.js';
-    import { IV_DRIPS, CONTACT } from './src/js/components.js';
-
+    import { initApp } from './src/js/main.js';
     initApp('home');
-
-    // Render Standard Drip Cards
-    const standardContainer = document.getElementById('standardDrips');
-    IV_DRIPS.standard.forEach((drip, i) => {
-      standardContainer.innerHTML += `
-        <a href="./iv-drip/${drip.id}/" class="drip-card" style="text-decoration:none; color:inherit; display:flex; flex-direction:column;">
-          <div class="drip-card__image">
-            <img src="./${drip.image}" alt="${drip.name}" loading="lazy">
-          </div>
-          <div class="drip-card__header">
-            <h3 class="drip-card__name">${drip.name}</h3>
-          </div>
-          <div class="drip-card__price">${drip.priceText} <span>/ ครั้ง</span></div>
-          <p class="drip-card__desc">${drip.suitable}</p>
-          <div class="drip-card__tags">
-            ${drip.tags.map(t => `<span class="drip-card__tag">${t}</span>`).join('')}
-          </div>
-          <div class="drip-card__cta" style="margin-top:auto;">
-            <span class="btn btn--primary btn--sm btn--block">ดูรายละเอียด →</span>
-          </div>
-        </a>
-      `;
-    });
-
-    // Render Premium Drip Cards
-    const premiumContainer = document.getElementById('premiumDrips');
-    IV_DRIPS.premium.forEach((drip, i) => {
-      premiumContainer.innerHTML += `
-        <a href="./iv-drip/${drip.id}/" class="drip-card drip-card--premium" style="text-decoration:none; color:inherit; display:flex; flex-direction:column;">
-          <div class="drip-card__image">
-            <img src="./${drip.image}" alt="${drip.name}" loading="lazy">
-          </div>
-          <div class="drip-card__header">
-            <h3 class="drip-card__name">${drip.name}</h3>
-          </div>
-          <div class="drip-card__price">${drip.priceText} <span>/ ครั้ง</span></div>
-          <p class="drip-card__desc">${drip.benefits}</p>
-          <div class="drip-card__tags">
-            ${drip.tags.map(t => `<span class="drip-card__tag">${t}</span>`).join('')}
-          </div>
-          <div class="drip-card__cta" style="margin-top:auto;">
-            <span class="btn btn--primary btn--sm btn--block">ดูรายละเอียด →</span>
-          </div>
-        </a>
-      `;
-    });
-
-    // Render Review Cards
-    const reviews = [
-      { name: 'คุณแนน', service: 'Celebrity Skin', text: 'ดริปผิวครั้งแรกค่ะ ผิวสว่างขึ้นเลย! บรรยากาศคลินิกดีมาก โซฟานุ่ม มีขนมเสิร์ฟด้วย สบายมาก 🥰', stars: 5 },
-      { name: 'คุณบอส', service: 'Party Recovery', text: 'แฮงค์หนักมาก มาดริปเสร็จ 15 นาที รู้สึกสดชื่นเลยครับ พนักงานน่ารัก บริการดีมาก 👍', stars: 5 },
-      { name: 'คุณมิ้นท์', service: 'Glow & Clear Drip', text: 'ทำมา 3 ครั้งแล้วค่ะ ผิวกระจ่างใสขึ้นจริงๆ หน้าไม่หมองเหมือนก่อน ชอบมากค่ะ โปร 2 แถม 2 คุ้มสุดๆ ❤️', stars: 5 },
-    ];
-
-    const reviewContainer = document.getElementById('reviewCards');
-    reviews.forEach((review, i) => {
-      reviewContainer.innerHTML += `
-        <div class="review-card">
-          <div class="review-card__stars">${''.repeat(review.stars)}</div>
-          <p class="review-card__text">"${review.text}"</p>
-          <div class="review-card__author">
-            <div class="review-card__avatar">${review.name.charAt(3)}</div>
-            <div>
-              <div class="review-card__name">${review.name}</div>
-              <div class="review-card__service">${review.service}</div>
-            </div>
-          </div>
-        </div>
-      `;
-    });
   </script>
 </body>
 
