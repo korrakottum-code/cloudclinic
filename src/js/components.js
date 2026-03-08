@@ -187,7 +187,7 @@ export const CONTACT = {
   phoneTel: 'tel:0657492944',
   facebook: 'https://www.facebook.com/CloudClinickk',
   googleMaps: 'https://maps.app.goo.gl/rSfu97bqaFn2N2Sb6',
-  googleMapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.746773919382!2d102.8364826!3d16.437682199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228965b59304e5%3A0xc1d3f252f134c352!2zQ2xvdWQgQ2xpbmljIC0g4LiE4Lil4Liy4Lin4LiU4LmM4LiE4Lil4Li04LiZ4Li04LiBIOC4guC4reC4meC5geC4geC5iOC4mQ!5e0!3m2!1sth!2sth',
+  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.837894283127!2d102.83093951167434!3d16.427958184224795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228a6fcf7c7c13%3A0xc3f8eec6c321d46d!2sCloud%20clinic%20%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99%20-%20%E0%B8%84%E0%B8%A5%E0%B8%B4%E0%B8%99%E0%B8%B4%E0%B8%81%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%87%E0%B8%B2%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99!5e0!3m2!1sth!2sth!4v1708845233156!5m2!1sth!2sth",
   address: '1/1 ถ.กลางเมือง ต.ในเมือง อ.เมือง จ.ขอนแก่น 40000 (ใกล้ศึกษาภัณฑ์ขอนแก่น)',
   hours: 'เปิดบริการ 12.00 - 20.00 น. (ปิดทุกวันพุธ)',
   clinicName: 'Cloud Clinic ขอนแก่น',
@@ -201,7 +201,7 @@ export function renderNavbar(activePage = '') {
   nav.id = 'navbar';
 
   const isSubPage = window.location.pathname.includes('/iv-drip/');
-  const prefix = isSubPage ? '../' : './';
+  const prefix = '/';
 
   nav.innerHTML = `
     <div class="navbar__inner">
@@ -263,7 +263,7 @@ export function renderFooter() {
   footer.id = 'footer';
 
   const isSubPage = window.location.pathname.includes('/iv-drip/');
-  const prefix = isSubPage ? '../' : './';
+  const prefix = '/';
 
   footer.innerHTML = `
     <div class="container">
