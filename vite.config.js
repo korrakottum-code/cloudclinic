@@ -9,6 +9,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        notFound: resolve(__dirname, '404.html'),
         ivDripMenu: resolve(__dirname, 'iv-drip-menu/index.html'),
         about: resolve(__dirname, 'about/index.html'),
         reviews: resolve(__dirname, 'reviews/index.html'),

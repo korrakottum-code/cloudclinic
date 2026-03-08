@@ -13,6 +13,7 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "sharp": "^0.34.5",
     "vite": "^7.3.1"
   }
 }

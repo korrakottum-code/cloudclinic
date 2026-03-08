@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ไม่พบหน้านี้ (404) | Cloud Clinic ขอนแก่น</title>
+    <meta name="robots" content="noindex, follow">
+
+    <link rel="icon" href="/favicon-transparent.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon-transparent.png">
+
+    <link rel="stylesheet" href="/src/styles/index.css">
+    <link rel="stylesheet" href="/src/styles/components.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700;800&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .error-page {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--space-8);
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            color: var(--color-primary-light);
+            line-height: 1;
+            margin-bottom: var(--space-4);
+            background: var(--gradient-sky);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .error-title {
+            font-size: var(--text-3xl);
+            font-weight: 700;
+            margin-bottom: var(--space-4);
+            color: var(--color-text);
+        }
+
+        .error-desc {
+            font-size: var(--text-lg);
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin-bottom: var(--space-8);
+            line-height: var(--leading-relaxed);
+        }
+
+        .error-actions {
+            display: flex;
+            gap: var(--space-4);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+
+    <main>
+        <section class="error-page container">
+            <div class="error-code">404</div>
+            <h1 class="error-title">อ๊ะ... หาหน้าเว็บนี้ไม่เจอ</h1>
+            <p class="error-desc">
+                ลิงก์อาจจะเสีย หน้าถูกย้ายไปแล้ว หรือคุณอาจพิมพ์ URL ผิดพลาด<br>
+                แต่ไม่ต้องห่วง ให้เราช่วยดูแลผิวคุณต่อนะครับ ☁️✨
+            </p>
+
+            <div class="error-actions">
+                <a href="/" class="btn btn--outline btn--lg">
+                    กลับหน้าแรก
+                </a>
+                <a href="https://line.me/ti/p/~@Cloud-clinic" target="_blank" class="btn btn--line btn--lg">
+                    📞 ทักแชท / สอบถามแอดมิน
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script type="module">
+        import { initApp } from './src/js/main.js';
+        initApp('404');
+    </script>
+</body>
+
+</html>
