@@ -38,6 +38,7 @@ export default defineConfig({
         blogImmuneBoost: resolve(__dirname, 'blog/health-guide/immune-boost/index.html'),
         blogDetoxGuide: resolve(__dirname, 'blog/health-guide/detox-guide/index.html'),
         blogRecoveryTips: resolve(__dirname, 'blog/health-guide/recovery-tips/index.html'),
+        blogIvDripPainDuration: resolve(__dirname, 'blog/drip-knowledge/iv-drip-pain-duration/index.html'),
       },
     },
   },

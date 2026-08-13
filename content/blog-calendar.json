@@ -1,0 +1,443 @@
+{
+  "_readme": "Content calendar for the daily blog automation. 'topics' with status=pending are consumed in array order by scripts/publish-blog-post.js. Add more entries to the bottom before the queue runs dry. See content/BLOG-PLAYBOOK.md for writing rules.",
+  "categories": {
+    "skin-tips": {
+      "label": "เคล็ดลับผิวสวย",
+      "path": "/blog/skin-tips/"
+    },
+    "health-guide": {
+      "label": "คู่มือสุขภาพ",
+      "path": "/blog/health-guide/"
+    },
+    "drip-knowledge": {
+      "label": "ความรู้ดริปผิว",
+      "path": "/blog/drip-knowledge/"
+    }
+  },
+  "topics": [
+    {
+      "slug": "brightening-tips",
+      "category": "skin-tips",
+      "title": "ทำผิวขาวใสด้วยดริปผิว ได้ผลเร็วแค่ไหน?",
+      "status": "published",
+      "publishedDate": "2026-03-08"
+    },
+    {
+      "slug": "acne-solutions",
+      "category": "skin-tips",
+      "title": "แก้ปัญหาสิวอักเสบด้วยดริปผิวสูตรเฉพาะ",
+      "status": "published",
+      "publishedDate": "2026-03-08"
+    },
+    {
+      "slug": "anti-aging",
+      "category": "skin-tips",
+      "title": "ชะลอวัยด้วยดริปผิว ต้านอนุมูลอิสระจากภายใน",
+      "status": "published",
+      "publishedDate": "2026-03-08"
+    },
+    {
+      "slug": "detox-guide",
+      "category": "health-guide",
+      "title": "ดีท็อกซ์ร่างกายด้วยดริปผิว ล้างสารพิษจากภายใน",
+      "status": "published",
+      "publishedDate": "2026-03-08"
+    },
+    {
+      "slug": "immune-boost",
+      "category": "health-guide",
+      "title": "เสริมภูมิคุ้มกันด้วย IV Drip ป้องกันโรคช่วงเปลี่ยนฤดู",
+      "status": "published",
+      "publishedDate": "2026-03-08"
+    },
+    {
+      "slug": "recovery-tips",
+      "category": "health-guide",
+      "title": "ฟื้นฟูร่างกายหลังดื่มแอลกอฮอล์ด้วย Party Recovery Drip",
+      "status": "published",
+      "publishedDate": "2026-03-08"
+    },
+    {
+      "slug": "what-is-iv-drip",
+      "category": "drip-knowledge",
+      "title": "IV Drip คืออะไร? ดีอย่างไร ปลอดภัยแค่ไหน",
+      "status": "published",
+      "publishedDate": "2026-03-08"
+    },
+    {
+      "slug": "vitamin-guide",
+      "category": "drip-knowledge",
+      "title": "วิตามินในดริปผิว แต่ละตัวช่วยเรื่องอะไร?",
+      "status": "published",
+      "publishedDate": "2026-03-08"
+    },
+    {
+      "slug": "safety-tips",
+      "category": "drip-knowledge",
+      "title": "ดริปผิวปลอดภัยไหม? สิ่งที่ควรรู้ก่อนทำ",
+      "status": "published",
+      "publishedDate": "2026-03-08"
+    },
+    {
+      "slug": "iv-drip-pain-duration",
+      "category": "drip-knowledge",
+      "title": "ดริปผิวเจ็บไหม ใช้เวลานานแค่ไหนกว่าจะเห็นผล",
+      "keyword": "ดริปผิวเจ็บไหม",
+      "keywords": "ดริปผิวเจ็บไหม, ดริปผิว ใช้เวลานานแค่ไหน, ฉีดผิว ขอนแก่น",
+      "angle": "ตอบคำถามที่คนกลัวก่อนลองครั้งแรก: เจ็บระดับไหน ใช้เวลากี่นาที เริ่มเห็นผลเมื่อไหร่ เทียบความรู้สึกกับการเจาะเลือดทั่วไป",
+      "relatedDripId": "vitality-skin",
+      "relatedImage": "/images/drips/vitality-skin.webp",
+      "readTime": 5,
+      "status": "published",
+      "publishedDate": "2026-08-13"
+    },
+    {
+      "slug": "sun-damage-brightening",
+      "category": "skin-tips",
+      "title": "ผิวหมองคล้ำจากแดด แก้ยังไงให้ผิวกลับมาใส",
+      "keyword": "ผิวหมองคล้ำจากแดด",
+      "keywords": "ผิวหมองคล้ำจากแดด, ผิวใส ขอนแก่น, ดริปผิว ขอนแก่น",
+      "angle": "อธิบายกลไกที่แดดทำให้ผิวหมองคล้ำ (เมลานิน, อนุมูลอิสระ) แล้วโยงมาที่วิตามินในดริปที่ช่วยเรื่องนี้ พร้อมทริคป้องกันเบื้องต้น",
+      "relatedDripId": "glow-and-clear",
+      "relatedImage": "/images/drips/glow-and-clear.webp",
+      "readTime": 5,
+      "status": "pending"
+    },
+    {
+      "slug": "chronic-fatigue-causes",
+      "category": "health-guide",
+      "title": "อ่อนเพลียเรื้อรัง ทำงานไม่มีแรง สาเหตุมาจากอะไร",
+      "keyword": "อ่อนเพลียเรื้อรัง",
+      "keywords": "อ่อนเพลียเรื้อรัง, ไม่มีแรง, วิตามินผิว ขอนแก่น",
+      "angle": "ลิสต์สาเหตุทั่วไปของอาการอ่อนเพลียเรื้อรัง (นอนไม่พอ, ขาดสารอาหาร, เครียดสะสม) แล้วอธิบายว่าวิตามินบีรวม/สารอาหารทางเส้นเลือดช่วยเติมพลังงานได้อย่างไร",
+      "relatedDripId": "vitality-skin",
+      "relatedImage": "/images/drips/vitality-skin.webp",
+      "readTime": 5,
+      "status": "pending"
+    },
+    {
+      "slug": "acne-scars-vs-marks",
+      "category": "skin-tips",
+      "title": "รอยสิว vs หลุมสิว ต่างกันยังไง ดริปผิวช่วยได้แค่ไหน",
+      "keyword": "รอยสิวหลุมสิว",
+      "keywords": "รอยสิว หลุมสิว ต่างกันยังไง, รักษาสิว ขอนแก่น, ดริปลดสิว ขอนแก่น",
+      "angle": "แยกความต่างระหว่างรอยแดง/รอยดำ กับหลุมสิว อธิบายว่าดริปผิวช่วยเรื่องรอยดำ/ผิวไม่เรียบเนียนได้ แต่หลุมสิวลึกต้องรักษาด้วยวิธีอื่นร่วมด้วย ไม่โอ้อวดเกินจริง",
+      "relatedDripId": "skin-detox-acne-clear",
+      "relatedImage": "/images/drips/skin-detox-acne.webp",
+      "readTime": 5,
+      "status": "pending"
+    },
+    {
+      "slug": "sleep-quality-health",
+      "category": "health-guide",
+      "title": "นอนไม่หลับ หลับไม่สนิท ส่งผลต่อสุขภาพยังไงบ้าง",
+      "keyword": "นอนไม่หลับ",
+      "keywords": "นอนไม่หลับ, หลับไม่สนิท, ดริปวิตามินผิว ขอนแก่น",
+      "angle": "อธิบายผลของการนอนไม่พอต่อผิวและร่างกาย (ฮอร์โมนคอร์ติซอล, ผิวโทรม, ภูมิคุ้มกันลด) แล้วแนะนำสูตรที่ช่วยผ่อนคลาย/ฟื้นฟู",
+      "relatedDripId": "anti-stress-sleep-well",
+      "relatedImage": "/images/drips/anti-stress.webp",
+      "readTime": 5,
+      "status": "pending"
+    },
+    {
+      "slug": "iv-drip-frequency",
+      "category": "drip-knowledge",
+      "title": "ดริปผิวควรทำบ่อยแค่ไหน ทำถี่เกินไปมีผลเสียไหม",
+      "keyword": "ดริปผิวควรทำบ่อยแค่ไหน",
+      "keywords": "ดริปผิวควรทำบ่อยแค่ไหน, ดริปวิตามินผิวสูตรไหนดี, ฉีดผิว ขอนแก่น",
+      "angle": "ให้กรอบความถี่ทั่วไปตามเป้าหมาย (ดูแลรักษาผล vs แก้ปัญหาเฉพาะ) เตือนว่าความถี่ที่เหมาะสมควรปรึกษาผู้เชี่ยวชาญประเมินเป็นรายบุคคล",
+      "relatedDripId": "renewal-skin",
+      "relatedImage": "/images/drips/renewal-skin.webp",
+      "readTime": 4,
+      "status": "pending"
+    },
+    {
+      "slug": "sensitive-skin-care",
+      "category": "skin-tips",
+      "title": "ผิวแพ้ง่าย ระคายเคืองบ่อย ดูแลยังไงให้ผิวแข็งแรง",
+      "keyword": "ผิวแพ้ง่าย",
+      "keywords": "ผิวแพ้ง่าย ระคายเคือง, ดูแลผิวแพ้ง่าย, คลินิกความงาม ขอนแก่น",
+      "angle": "ทริคดูแลผิวแพ้ง่ายทั่วไป (เลี่ยงสารระคายเคือง, เสริมวิตามินจากภายใน) เน้นว่าผิวแพ้ง่ายควรปรึกษาก่อนทำทรีตเมนต์ใดๆ",
+      "relatedDripId": "vitality-skin",
+      "relatedImage": "/images/drips/vitality-skin.webp",
+      "readTime": 4,
+      "status": "pending"
+    },
+    {
+      "slug": "pm25-immune-care",
+      "category": "health-guide",
+      "title": "ภูมิแพ้อากาศ ฝุ่น PM2.5 ดูแลร่างกายยังไงดี",
+      "keyword": "PM2.5 ภูมิแพ้อากาศ",
+      "keywords": "PM2.5 ขอนแก่น, ภูมิแพ้อากาศ, เสริมภูมิคุ้มกัน ขอนแก่น",
+      "angle": "อธิบายผลกระทบฝุ่น PM2.5 ต่อระบบทางเดินหายใจและผิว แนะนำการดูแลพื้นฐาน (หน้ากาก, เครื่องฟอกอากาศ) และการเสริมภูมิคุ้มกันจากภายใน",
+      "relatedDripId": "immune-booster",
+      "relatedImage": "/images/drips/immune-booster.webp",
+      "readTime": 5,
+      "status": "pending"
+    },
+    {
+      "slug": "iv-vs-oral-vitamins",
+      "category": "drip-knowledge",
+      "title": "ดริปผิว vs กินวิตามินเสริม ต่างกันยังไง แบบไหนดีกว่า",
+      "keyword": "ดริปผิว vs กินวิตามิน",
+      "keywords": "ดริปผิว vs กินวิตามิน, วิตามินผิว ขอนแก่น, ดริปวิตามินผิวสูตรไหนดี",
+      "angle": "เปรียบเทียบการดูดซึม ความเร็วของผล และข้อจำกัดของแต่ละวิธีอย่างเป็นกลาง ไม่บอกว่าวิธีใดวิธีหนึ่ง 'ดีที่สุด' แต่บอกว่าเหมาะกับสถานการณ์ต่างกัน",
+      "relatedDripId": "vitality-skin",
+      "relatedImage": "/images/drips/vitality-skin.webp",
+      "readTime": 5,
+      "status": "pending"
+    },
+    {
+      "slug": "dry-skin-causes",
+      "category": "skin-tips",
+      "title": "ทำไมผิวถึงแห้งกร้าน ทั้งที่ทาครีมทุกวัน",
+      "keyword": "ผิวแห้งกร้าน",
+      "keywords": "ผิวแห้งกร้าน, ผิวขาดน้ำ, ดริปผิว ขอนแก่น",
+      "angle": "อธิบายว่าความชุ่มชื้นผิวไม่ได้มาจากการทาครีมอย่างเดียว แต่เกี่ยวกับความชุ่มชื้นจากภายในและวิตามินที่ช่วยเก็บกักน้ำในผิว",
+      "relatedDripId": "renewal-skin",
+      "relatedImage": "/images/drips/renewal-skin.webp",
+      "readTime": 4,
+      "status": "pending"
+    },
+    {
+      "slug": "work-stress-signals",
+      "category": "health-guide",
+      "title": "ทำงานหนัก เครียดสะสม ร่างกายส่งสัญญาณเตือนแบบไหน",
+      "keyword": "เครียดสะสม",
+      "keywords": "เครียดสะสม, ทำงานหนักพักผ่อนไม่พอ, ดริปวิตามินผิว ขอนแก่น",
+      "angle": "ลิสต์สัญญาณเตือนของร่างกายเมื่อเครียดสะสม (นอนไม่หลับ, ปวดหัว, ผิวโทรม) และแนวทางผ่อนคลายเบื้องต้นร่วมกับการเสริมวิตามิน",
+      "relatedDripId": "anti-stress-sleep-well",
+      "relatedImage": "/images/drips/anti-stress.webp",
+      "readTime": 4,
+      "status": "pending"
+    },
+    {
+      "slug": "first-time-iv-drip-prep",
+      "category": "drip-knowledge",
+      "title": "ก่อนไปดริปผิวครั้งแรก ควรเตรียมตัวยังไงบ้าง",
+      "keyword": "เตรียมตัวก่อนดริปผิว",
+      "keywords": "เตรียมตัวก่อนดริปผิว, ดริปผิวครั้งแรก, ฉีดผิว ขอนแก่น",
+      "angle": "เช็คลิสต์เตรียมตัวจริง: กินอิ่มพอดี พักผ่อนเพียงพอ แจ้งประวัติแพ้ยา/โรคประจำตัวกับผู้เชี่ยวชาญก่อนทำเสมอ",
+      "relatedDripId": "vitality-skin",
+      "relatedImage": "/images/drips/vitality-skin.webp",
+      "readTime": 4,
+      "status": "pending"
+    },
+    {
+      "slug": "office-skin-problems",
+      "category": "skin-tips",
+      "title": "ผิวเสียจากแอร์ ปัญหาที่คนออฟฟิศเจอบ่อย",
+      "keyword": "ผิวเสียจากแอร์",
+      "keywords": "ผิวเสียจากแอร์, คนออฟฟิศ ผิวแห้ง, วิตามินผิว ขอนแก่น",
+      "angle": "อธิบายว่าอากาศแอร์ทำให้ผิวขาดความชุ่มชื้นยังไง พร้อมทริคดูแลระหว่างวันสำหรับคนออฟฟิศ",
+      "relatedDripId": "vitality-skin",
+      "relatedImage": "/images/drips/vitality-skin.webp",
+      "readTime": 4,
+      "status": "pending"
+    },
+    {
+      "slug": "liver-daily-load",
+      "category": "health-guide",
+      "title": "ตับทำงานหนักจากอะไรบ้างในชีวิตประจำวัน",
+      "keyword": "ตับทำงานหนัก",
+      "keywords": "ตับทำงานหนัก, ดีท็อกซ์ตับ, ดริปผิว ขอนแก่น",
+      "angle": "ลิสต์ปัจจัยที่ทำให้ตับทำงานหนักในชีวิตประจำวัน (แอลกอฮอล์, ยา, อาหารแปรรูป) และการเสริมสารอาหารที่ช่วยสนับสนุนการทำงานของตับ",
+      "relatedDripId": "detox-liver-care",
+      "relatedImage": "/images/drips/detox-liver-care.webp",
+      "readTime": 5,
+      "status": "pending"
+    },
+    {
+      "slug": "who-should-do-iv-drip",
+      "category": "drip-knowledge",
+      "title": "ดริปผิวเหมาะกับใคร ใครที่ควรปรึกษาแพทย์ก่อนทำ",
+      "keyword": "ดริปผิวเหมาะกับใคร",
+      "keywords": "ดริปผิวเหมาะกับใคร, ข้อควรระวังดริปผิว, ฉีดผิว ขอนแก่น",
+      "angle": "ระบุกลุ่มที่เหมาะ และกลุ่มที่ควรปรึกษาผู้เชี่ยวชาญก่อนทำอย่างชัดเจน (ผู้ที่มีโรคประจำตัว, ตั้งครรภ์, ให้นมบุตร) เน้นความปลอดภัยเป็นหลัก",
+      "relatedDripId": "vitality-skin",
+      "relatedImage": "/images/drips/vitality-skin.webp",
+      "readTime": 5,
+      "status": "pending"
+    },
+    {
+      "slug": "skin-prep-special-event",
+      "category": "skin-tips",
+      "title": "เคล็ดลับผิวใสก่อนงานแต่ง หรือถ่ายรูปสำคัญ",
+      "keyword": "ผิวใสก่อนงานสำคัญ",
+      "keywords": "ผิวใสก่อนงานแต่ง, ผิวสวยถ่ายรูป, ดริปผิว ขอนแก่น",
+      "angle": "แนะนำการวางแผนดูแลผิวล่วงหน้าก่อนงานสำคัญ ไม่ใช่หวังผลข้ามคืน เน้นระยะเวลาที่ควรเริ่มเตรียมตัว",
+      "relatedDripId": "glow-and-clear",
+      "relatedImage": "/images/drips/glow-and-clear.webp",
+      "readTime": 4,
+      "status": "pending"
+    },
+    {
+      "slug": "alcohol-recovery-needs",
+      "category": "health-guide",
+      "title": "ดื่มแอลกอฮอล์บ่อย ร่างกายต้องการอะไรเพิ่มเป็นพิเศษ",
+      "keyword": "ดื่มแอลกอฮอล์บ่อย",
+      "keywords": "ดื่มแอลกอฮอล์บ่อย ร่างกายต้องการอะไร, ดริปแก้แฮงค์, ฟื้นฟูตับ ขอนแก่น",
+      "angle": "อธิบายว่าแอลกอฮอล์ทำให้ร่างกายสูญเสียน้ำและวิตามินบีอย่างไร และการเติมสารอาหารช่วยฟื้นตัวเร็วขึ้นได้อย่างไร",
+      "relatedDripId": "party-recovery",
+      "relatedImage": "/images/drips/party-recovery.webp",
+      "readTime": 4,
+      "status": "pending"
+    },
+    {
+      "slug": "iv-drip-ingredients-explained",
+      "category": "drip-knowledge",
+      "title": "ส่วนผสมในดริปผิวมีอะไรบ้าง แต่ละตัวทำหน้าที่อะไร",
+      "keyword": "ส่วนผสมดริปผิว",
+      "keywords": "ส่วนผสมดริปผิว, กลูต้าไธโอน, วิตามินซี ดริปผิว",
+      "angle": "สรุปสารอาหารหลักที่พบในดริปผิว (Vitamin C, Glutathione, B Complex, Zinc) พร้อมหน้าที่คร่าวๆ ของแต่ละตัวแบบเข้าใจง่าย",
+      "relatedDripId": "celebrity-skin",
+      "relatedImage": "/images/drips/celebrity-skin.webp",
+      "readTime": 6,
+      "status": "pending"
+    },
+    {
+      "slug": "glutathione-explained",
+      "category": "skin-tips",
+      "title": "กลูต้าไธโอนคืออะไร ทำไมถึงช่วยเรื่องผิวขาวใส",
+      "keyword": "กลูต้าไธโอนคืออะไร",
+      "keywords": "กลูต้าไธโอนคืออะไร, กลูต้าไธโอน ผิวขาว, ดริปผิว ขอนแก่น",
+      "angle": "อธิบายกลไกของกลูต้าไธโอนแบบวิทยาศาสตร์เข้าใจง่าย เป็นสารต้านอนุมูลอิสระตามธรรมชาติในร่างกาย ไม่ใช่ 'ยาฟอกสีผิว' ตามความเข้าใจผิด",
+      "relatedDripId": "glow-and-clear",
+      "relatedImage": "/images/drips/glow-and-clear.webp",
+      "readTime": 5,
+      "status": "pending"
+    },
+    {
+      "slug": "workout-recovery-slow",
+      "category": "health-guide",
+      "title": "ออกกำลังกายหนักแต่ฟื้นตัวช้า ปัญหาที่นักกีฬาสมัครเล่นเจอ",
+      "keyword": "ฟื้นตัวหลังออกกำลังกาย",
+      "keywords": "ฟื้นตัวหลังออกกำลังกาย, กล้ามเนื้อล้า, ดริปผิว ขอนแก่น",
+      "angle": "อธิบายสาเหตุที่ร่างกายฟื้นตัวช้าหลังออกกำลังกายหนัก (สูญเสียอิเล็กโทรไลต์, กล้ามเนื้ออักเสบ) และการเสริมสารอาหารช่วยฟื้นตัว",
+      "relatedDripId": "slim-and-burn",
+      "relatedImage": "/images/drips/slim-and-burn.webp",
+      "readTime": 4,
+      "status": "pending"
+    },
+    {
+      "slug": "choosing-safe-iv-clinic",
+      "category": "drip-knowledge",
+      "title": "เลือกคลินิกดริปผิวยังไงให้ปลอดภัย ต้องเช็คอะไรบ้าง",
+      "keyword": "เลือกคลินิกดริปผิว",
+      "keywords": "เลือกคลินิกดริปผิว, คลินิกดริปผิวปลอดภัย, ฉีดผิว ขอนแก่น",
+      "angle": "เช็คลิสต์เลือกคลินิก: ใบอนุญาตสถานพยาบาล, ผู้ให้บริการมีใบประกอบวิชาชีพ, ยามีใบรับรองที่มาชัดเจน, สภาพแวดล้อมสะอาดปลอดภัย",
+      "relatedDripId": "vitality-skin",
+      "relatedImage": "/images/drips/vitality-skin.webp",
+      "readTime": 5,
+      "status": "pending"
+    },
+    {
+      "slug": "vitamin-c-topical-vs-iv",
+      "category": "skin-tips",
+      "title": "วิตามินซีกับผิว ทาก็ได้ ดริปก็ได้ ต่างกันตรงไหน",
+      "keyword": "วิตามินซีทาหรือดริป",
+      "keywords": "วิตามินซีผิว, ทาวิตามินซี vs ดริป, ดริปผิว ขอนแก่น",
+      "angle": "เปรียบเทียบวิธีทาเฉพาะจุดกับการให้ทางเส้นเลือดในแง่การดูดซึมและเป้าหมายการใช้งานที่ต่างกัน",
+      "relatedDripId": "renewal-skin",
+      "relatedImage": "/images/drips/renewal-skin.webp",
+      "readTime": 4,
+      "status": "pending"
+    },
+    {
+      "slug": "b-complex-importance",
+      "category": "health-guide",
+      "title": "วิตามินบีรวมสำคัญกับร่างกายยังไง ขาดแล้วเป็นยังไง",
+      "keyword": "วิตามินบีรวม",
+      "keywords": "วิตามินบีรวมสำคัญยังไง, ขาดวิตามินบี, ดริปวิตามินผิว ขอนแก่น",
+      "angle": "อธิบายบทบาทของวิตามินบีรวมต่อระบบประสาทและพลังงาน และอาการที่อาจเกิดเมื่อร่างกายขาดวิตามินกลุ่มนี้",
+      "relatedDripId": "vitality-skin",
+      "relatedImage": "/images/drips/vitality-skin.webp",
+      "readTime": 4,
+      "status": "pending"
+    },
+    {
+      "slug": "iv-drip-pricing-quality",
+      "category": "drip-knowledge",
+      "title": "ดริปผิวราคาแพงไป ถูกไป บอกอะไรเกี่ยวกับคุณภาพบ้างไหม",
+      "keyword": "ดริปผิวราคา",
+      "keywords": "ดริปผิวราคาเท่าไหร่, ดริปผิวถูกไปดีไหม, ฉีดผิว ขอนแก่น",
+      "angle": "อธิบายปัจจัยที่มีผลต่อราคา (คุณภาพยา, ความเข้มข้น, ประสบการณ์ผู้ให้บริการ) เตือนว่าราคาถูกผิดปกติควรระวังเรื่องความปลอดภัย",
+      "relatedDripId": "perfection-skin",
+      "relatedImage": "/images/drips/perfection-skin.webp",
+      "readTime": 4,
+      "status": "pending"
+    },
+    {
+      "slug": "collagen-decline-signs",
+      "category": "skin-tips",
+      "title": "คอลลาเจนหมดไว ผิวเริ่มหย่อนคล้อย สัญญาณที่ควรรู้",
+      "keyword": "คอลลาเจนหมดไว",
+      "keywords": "คอลลาเจนหมดไว, ผิวหย่อนคล้อย, ดริปผิว ขอนแก่น",
+      "angle": "อธิบายว่าคอลลาเจนลดลงตามวัยได้อย่างไร สัญญาณที่สังเกตได้ และวิตามินที่ช่วยกระตุ้นการสร้างคอลลาเจนตามธรรมชาติ",
+      "relatedDripId": "celebrity-skin",
+      "relatedImage": "/images/drips/celebrity-skin.webp",
+      "readTime": 5,
+      "status": "pending"
+    },
+    {
+      "slug": "weak-immune-signs",
+      "category": "health-guide",
+      "title": "ระบบภูมิคุ้มกันอ่อนแอ สังเกตได้จากอะไร",
+      "keyword": "ภูมิคุ้มกันอ่อนแอ",
+      "keywords": "ภูมิคุ้มกันอ่อนแอ สังเกตยังไง, เสริมภูมิคุ้มกัน ขอนแก่น",
+      "angle": "ลิสต์สัญญาณที่บ่งบอกภูมิคุ้มกันอ่อนแอ (ป่วยง่าย, แผลหายช้า, อ่อนเพลีย) และการดูแลพื้นฐานร่วมกับการเสริมวิตามิน",
+      "relatedDripId": "immune-booster",
+      "relatedImage": "/images/drips/immune-booster.webp",
+      "readTime": 4,
+      "status": "pending"
+    },
+    {
+      "slug": "after-iv-drip-care",
+      "category": "drip-knowledge",
+      "title": "หลังดริปผิวเสร็จ ควรดูแลตัวเองต่อยังไง",
+      "keyword": "ดูแลตัวเองหลังดริปผิว",
+      "keywords": "ดูแลตัวเองหลังดริปผิว, หลังดริปผิวทำอะไรได้บ้าง, ฉีดผิว ขอนแก่น",
+      "angle": "คำแนะนำหลังทำจริง: ดื่มน้ำเยอะๆ พักผ่อน หลีกเลี่ยงแดดจัด สังเกตอาการผิดปกติแล้วรีบติดต่อคลินิก",
+      "relatedDripId": "vitality-skin",
+      "relatedImage": "/images/drips/vitality-skin.webp",
+      "readTime": 3,
+      "status": "pending"
+    },
+    {
+      "slug": "uneven-skintone-fix",
+      "category": "skin-tips",
+      "title": "ผิวไม่สม่ำเสมอ มีจุดด่างดำ แก้ได้ด้วยวิธีไหนบ้าง",
+      "keyword": "ผิวไม่สม่ำเสมอ",
+      "keywords": "ผิวไม่สม่ำเสมอ, จุดด่างดำ, ดริปผิว ขอนแก่น",
+      "angle": "อธิบายสาเหตุของสีผิวไม่สม่ำเสมอ (แดด, ฮอร์โมน, รอยสิวเก่า) และแนวทางดูแลที่ต้องใช้เวลาและความสม่ำเสมอ ไม่ใช่ผลลัพธ์ทันที",
+      "relatedDripId": "glow-and-clear",
+      "relatedImage": "/images/drips/glow-and-clear.webp",
+      "readTime": 4,
+      "status": "pending"
+    },
+    {
+      "slug": "proper-detox-guide",
+      "category": "health-guide",
+      "title": "ดีท็อกซ์ร่างกายที่ถูกวิธี ต่างจากดีท็อกซ์แบบผิดๆ ยังไง",
+      "keyword": "ดีท็อกซ์ที่ถูกวิธี",
+      "keywords": "ดีท็อกซ์ร่างกายที่ถูกวิธี, ดีท็อกซ์ผิดวิธีอันตราย, ดริปดีท็อกซ์ ขอนแก่น",
+      "angle": "เตือนอันตรายของดีท็อกซ์แบบสุดโต่ง (อดอาหาร, ยาระบายเกินขนาด) เทียบกับการดูแลตับ/ไตให้ทำงานได้ปกติด้วยสารอาหารที่เหมาะสม",
+      "relatedDripId": "detox-liver-care",
+      "relatedImage": "/images/drips/detox-liver-care.webp",
+      "readTime": 5,
+      "status": "pending"
+    },
+    {
+      "slug": "standard-vs-premium-drip",
+      "category": "drip-knowledge",
+      "title": "ดริปผิว Standard กับ Premium ต่างกันยังไง เลือกสูตรไหนดี",
+      "keyword": "ดริปผิว Standard vs Premium",
+      "keywords": "ดริปผิว standard premium ต่างกันยังไง, เลือกสูตรดริปผิว, ฉีดผิว ขอนแก่น",
+      "angle": "อธิบายความต่างเชิงส่วนผสม/ความเข้มข้น/ราคา และแนะแนวทางเลือกตามเป้าหมายผิวของแต่ละคน ไม่ชี้นำว่าราคาแพงกว่าดีกว่าเสมอไป",
+      "relatedDripId": "perfection-skin",
+      "relatedImage": "/images/drips/perfection-skin.webp",
+      "readTime": 5,
+      "status": "pending"
+    }
+  ]
+}
