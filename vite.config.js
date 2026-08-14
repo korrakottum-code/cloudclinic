@@ -41,6 +41,7 @@ export default defineConfig({
         blogIvDripPainDuration: resolve(__dirname, 'blog/drip-knowledge/iv-drip-pain-duration/index.html'),
         blogSunDamageBrightening: resolve(__dirname, 'blog/skin-tips/sun-damage-brightening/index.html'),
         blogChronicFatigueCauses: resolve(__dirname, 'blog/health-guide/chronic-fatigue-causes/index.html'),
+        blogAcneScarsVsMarks: resolve(__dirname, 'blog/skin-tips/acne-scars-vs-marks/index.html'),
       },
     },
   },

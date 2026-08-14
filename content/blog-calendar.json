@@ -127,7 +127,8 @@
       "relatedDripId": "skin-detox-acne-clear",
       "relatedImage": "/images/drips/skin-detox-acne.webp",
       "readTime": 5,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-08-14"
     },
     {
       "slug": "sleep-quality-health",
