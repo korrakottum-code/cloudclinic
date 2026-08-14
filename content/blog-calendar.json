@@ -140,7 +140,8 @@
       "relatedDripId": "anti-stress-sleep-well",
       "relatedImage": "/images/drips/anti-stress.webp",
       "readTime": 5,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-08-14"
     },
     {
       "slug": "iv-drip-frequency",
