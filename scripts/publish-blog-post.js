@@ -145,6 +145,7 @@ function main() {
     excerpt: excerptFrom(draft.highlightBox),
     categoryLabel: categoryMeta.label,
     readTime: draft.readTime,
+    date: publishDateThai,
   };
 
   const categoryIndexPath = join(projectRoot, 'blog', draft.category, 'index.html');

@@ -23,6 +23,7 @@ export const DRIP_IMAGE_DIMS = {
  * @param {string} entry.excerpt
  * @param {string} entry.categoryLabel
  * @param {number} entry.readTime
+ * @param {string} [entry.date] - Thai-formatted publish date, e.g. "14 สิงหาคม 2026"
  * @param {object} [opts]
  * @param {'h2'|'div'} [opts.titleTag='div'] - main blog index uses h2, category indexes use div
  * @param {string} [opts.animateClass='animate-on-scroll']
@@ -39,7 +40,7 @@ export function renderBlogCard(entry, opts = {}) {
               <${titleTag} class="blog-card__title">${entry.title}</${titleTag}>
               <p class="blog-card__excerpt">${entry.excerpt}</p>
               <div class="blog-card__meta">
-                <span>⏱️ อ่าน ${entry.readTime} นาที</span>
+                <span>${entry.date ? `📅 ${entry.date} · ` : ''}⏱️ อ่าน ${entry.readTime} นาที</span>
                 <span class="blog-card__read-more">อ่านต่อ →</span>
               </div>
             </div>
