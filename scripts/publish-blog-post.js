@@ -61,14 +61,16 @@ function insertViteInputEntry(category, slug) {
     return;
   }
   const key = `blog${toPascalCase(slug)}`;
-  const newLine = `        ${key}: resolve(__dirname, '${relPath}'),\n`;
+  const eol = src.includes('\r\n') ? '\r\n' : '\n';
+  const newLine = `        ${key}: resolve(__dirname, '${relPath}'),${eol}`;
   // Anchor on the closing of rollupOptions.input, right before "server: {" — the file's
-  // structure keeps `input: {...} }, },` followed by the dev-server block.
-  const anchor = '      },\n    },\n  },\n  server:';
-  if (!src.includes(anchor)) {
+  // structure keeps `input: {...} }, },` followed by the dev-server block. Whitespace/EOL
+  // tolerant since this file may have CRLF line endings on Windows checkouts.
+  const anchorRe = /[ \t]*\}\s*,\s*\}\s*,\s*\}\s*,\s*\r?\n[ \t]*server:/;
+  if (!anchorRe.test(src)) {
     throw new Error('Could not find expected vite.config.js structure to insert build entry — update it manually.');
   }
-  const updated = src.replace(anchor, `${newLine}      },\n    },\n  },\n  server:`);
+  const updated = src.replace(anchorRe, (matched) => newLine + matched);
   writeFileSync(viteConfigPath, updated);
 }
 
