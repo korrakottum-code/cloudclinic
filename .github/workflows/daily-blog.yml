@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: daily-blog-publish
@@ -15,6 +17,9 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -40,7 +45,7 @@ jobs:
             echo "PUBLISH_EOF"
           } >> "$GITHUB_OUTPUT"
 
-      - name: Build (sanity check)
+      - name: Build
         if: contains(steps.publish.outputs.output, 'PUBLISHED')
         run: npm run build
 
@@ -52,3 +57,21 @@ jobs:
           git add blog/ content/blog-calendar.json public/sitemap.xml vite.config.js
           git commit -m "Publish daily blog article (automated)"
           git push
+
+      # Pushes made with the default GITHUB_TOKEN don't trigger other workflows (GitHub's
+      # loop-prevention rule), so deploy.yml would never fire on its own here — this job
+      # deploys directly instead of depending on that.
+      - name: Setup Pages
+        if: contains(steps.publish.outputs.output, 'PUBLISHED')
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        if: contains(steps.publish.outputs.output, 'PUBLISHED')
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "./dist"
+
+      - name: Deploy to GitHub Pages
+        if: contains(steps.publish.outputs.output, 'PUBLISHED')
+        id: deployment
+        uses: actions/deploy-pages@v4
