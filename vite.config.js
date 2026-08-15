@@ -43,6 +43,7 @@ export default defineConfig({
         blogChronicFatigueCauses: resolve(__dirname, 'blog/health-guide/chronic-fatigue-causes/index.html'),
         blogAcneScarsVsMarks: resolve(__dirname, 'blog/skin-tips/acne-scars-vs-marks/index.html'),
         blogSleepQualityHealth: resolve(__dirname, 'blog/health-guide/sleep-quality-health/index.html'),
+        blogIvDripFrequency: resolve(__dirname, 'blog/drip-knowledge/iv-drip-frequency/index.html'),
       },
     },
   },
