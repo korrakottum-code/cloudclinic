@@ -166,7 +166,8 @@
       "relatedDripId": "vitality-skin",
       "relatedImage": "/images/drips/vitality-skin.webp",
       "readTime": 4,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-08-16"
     },
     {
       "slug": "pm25-immune-care",
