@@ -45,6 +45,7 @@ export default defineConfig({
         blogSleepQualityHealth: resolve(__dirname, 'blog/health-guide/sleep-quality-health/index.html'),
         blogIvDripFrequency: resolve(__dirname, 'blog/drip-knowledge/iv-drip-frequency/index.html'),
         blogSensitiveSkinCare: resolve(__dirname, 'blog/skin-tips/sensitive-skin-care/index.html'),
+        blogPm25ImmuneCare: resolve(__dirname, 'blog/health-guide/pm25-immune-care/index.html'),
       },
     },
   },

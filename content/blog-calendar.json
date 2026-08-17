@@ -179,7 +179,8 @@
       "relatedDripId": "immune-booster",
       "relatedImage": "/images/drips/immune-booster.webp",
       "readTime": 5,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-08-17"
     },
     {
       "slug": "iv-vs-oral-vitamins",
