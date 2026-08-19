@@ -47,6 +47,7 @@ export default defineConfig({
         blogSensitiveSkinCare: resolve(__dirname, 'blog/skin-tips/sensitive-skin-care/index.html'),
         blogPm25ImmuneCare: resolve(__dirname, 'blog/health-guide/pm25-immune-care/index.html'),
         blogIvVsOralVitamins: resolve(__dirname, 'blog/drip-knowledge/iv-vs-oral-vitamins/index.html'),
+        blogDrySkinCauses: resolve(__dirname, 'blog/skin-tips/dry-skin-causes/index.html'),
       },
     },
   },
