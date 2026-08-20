@@ -218,7 +218,8 @@
       "relatedDripId": "anti-stress-sleep-well",
       "relatedImage": "/images/drips/anti-stress.webp",
       "readTime": 4,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-08-20"
     },
     {
       "slug": "first-time-iv-drip-prep",
