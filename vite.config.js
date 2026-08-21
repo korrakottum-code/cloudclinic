@@ -49,6 +49,7 @@ export default defineConfig({
         blogIvVsOralVitamins: resolve(__dirname, 'blog/drip-knowledge/iv-vs-oral-vitamins/index.html'),
         blogDrySkinCauses: resolve(__dirname, 'blog/skin-tips/dry-skin-causes/index.html'),
         blogWorkStressSignals: resolve(__dirname, 'blog/health-guide/work-stress-signals/index.html'),
+        blogFirstTimeIvDripPrep: resolve(__dirname, 'blog/drip-knowledge/first-time-iv-drip-prep/index.html'),
       },
     },
   },

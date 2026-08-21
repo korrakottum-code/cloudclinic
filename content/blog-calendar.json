@@ -231,7 +231,8 @@
       "relatedDripId": "vitality-skin",
       "relatedImage": "/images/drips/vitality-skin.webp",
       "readTime": 4,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-08-21"
     },
     {
       "slug": "office-skin-problems",
