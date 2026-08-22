@@ -50,6 +50,7 @@ export default defineConfig({
         blogDrySkinCauses: resolve(__dirname, 'blog/skin-tips/dry-skin-causes/index.html'),
         blogWorkStressSignals: resolve(__dirname, 'blog/health-guide/work-stress-signals/index.html'),
         blogFirstTimeIvDripPrep: resolve(__dirname, 'blog/drip-knowledge/first-time-iv-drip-prep/index.html'),
+        blogOfficeSkinProblems: resolve(__dirname, 'blog/skin-tips/office-skin-problems/index.html'),
       },
     },
   },
