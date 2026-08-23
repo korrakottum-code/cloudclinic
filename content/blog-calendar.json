@@ -257,7 +257,8 @@
       "relatedDripId": "detox-liver-care",
       "relatedImage": "/images/drips/detox-liver-care.webp",
       "readTime": 5,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-08-23"
     },
     {
       "slug": "who-should-do-iv-drip",

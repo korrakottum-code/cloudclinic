@@ -51,6 +51,7 @@ export default defineConfig({
         blogWorkStressSignals: resolve(__dirname, 'blog/health-guide/work-stress-signals/index.html'),
         blogFirstTimeIvDripPrep: resolve(__dirname, 'blog/drip-knowledge/first-time-iv-drip-prep/index.html'),
         blogOfficeSkinProblems: resolve(__dirname, 'blog/skin-tips/office-skin-problems/index.html'),
+        blogLiverDailyLoad: resolve(__dirname, 'blog/health-guide/liver-daily-load/index.html'),
       },
     },
   },
