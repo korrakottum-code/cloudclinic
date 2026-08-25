@@ -283,7 +283,8 @@
       "relatedDripId": "glow-and-clear",
       "relatedImage": "/images/drips/glow-and-clear.webp",
       "readTime": 4,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-08-25"
     },
     {
       "slug": "alcohol-recovery-needs",

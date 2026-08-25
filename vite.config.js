@@ -53,6 +53,7 @@ export default defineConfig({
         blogOfficeSkinProblems: resolve(__dirname, 'blog/skin-tips/office-skin-problems/index.html'),
         blogLiverDailyLoad: resolve(__dirname, 'blog/health-guide/liver-daily-load/index.html'),
         blogWhoShouldDoIvDrip: resolve(__dirname, 'blog/drip-knowledge/who-should-do-iv-drip/index.html'),
+        blogSkinPrepSpecialEvent: resolve(__dirname, 'blog/skin-tips/skin-prep-special-event/index.html'),
       },
     },
   },
