@@ -296,7 +296,8 @@
       "relatedDripId": "party-recovery",
       "relatedImage": "/images/drips/party-recovery.webp",
       "readTime": 4,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-08-26"
     },
     {
       "slug": "iv-drip-ingredients-explained",
