@@ -309,7 +309,8 @@
       "relatedDripId": "celebrity-skin",
       "relatedImage": "/images/drips/celebrity-skin.webp",
       "readTime": 6,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-08-28"
     },
     {
       "slug": "glutathione-explained",

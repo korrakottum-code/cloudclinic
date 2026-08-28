@@ -55,6 +55,7 @@ export default defineConfig({
         blogWhoShouldDoIvDrip: resolve(__dirname, 'blog/drip-knowledge/who-should-do-iv-drip/index.html'),
         blogSkinPrepSpecialEvent: resolve(__dirname, 'blog/skin-tips/skin-prep-special-event/index.html'),
         blogAlcoholRecoveryNeeds: resolve(__dirname, 'blog/health-guide/alcohol-recovery-needs/index.html'),
+        blogIvDripIngredientsExplained: resolve(__dirname, 'blog/drip-knowledge/iv-drip-ingredients-explained/index.html'),
       },
     },
   },
