@@ -322,7 +322,8 @@
       "relatedDripId": "glow-and-clear",
       "relatedImage": "/images/drips/glow-and-clear.webp",
       "readTime": 5,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-08-29"
     },
     {
       "slug": "workout-recovery-slow",
