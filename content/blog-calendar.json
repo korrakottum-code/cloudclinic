@@ -335,7 +335,8 @@
       "relatedDripId": "slim-and-burn",
       "relatedImage": "/images/drips/slim-and-burn.webp",
       "readTime": 4,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-08-29"
     },
     {
       "slug": "choosing-safe-iv-clinic",
