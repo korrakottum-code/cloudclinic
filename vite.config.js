@@ -58,6 +58,7 @@ export default defineConfig({
         blogIvDripIngredientsExplained: resolve(__dirname, 'blog/drip-knowledge/iv-drip-ingredients-explained/index.html'),
         blogGlutathioneExplained: resolve(__dirname, 'blog/skin-tips/glutathione-explained/index.html'),
         blogWorkoutRecoverySlow: resolve(__dirname, 'blog/health-guide/workout-recovery-slow/index.html'),
+        blogChoosingSafeIvClinic: resolve(__dirname, 'blog/drip-knowledge/choosing-safe-iv-clinic/index.html'),
       },
     },
   },
