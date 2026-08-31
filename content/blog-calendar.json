@@ -361,7 +361,8 @@
       "relatedDripId": "renewal-skin",
       "relatedImage": "/images/drips/renewal-skin.webp",
       "readTime": 4,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-08-31"
     },
     {
       "slug": "b-complex-importance",
