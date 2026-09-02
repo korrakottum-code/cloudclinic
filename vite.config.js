@@ -61,6 +61,7 @@ export default defineConfig({
         blogChoosingSafeIvClinic: resolve(__dirname, 'blog/drip-knowledge/choosing-safe-iv-clinic/index.html'),
         blogVitaminCTopicalVsIv: resolve(__dirname, 'blog/skin-tips/vitamin-c-topical-vs-iv/index.html'),
         blogBComplexImportance: resolve(__dirname, 'blog/health-guide/b-complex-importance/index.html'),
+        blogIvDripPricingQuality: resolve(__dirname, 'blog/drip-knowledge/iv-drip-pricing-quality/index.html'),
       },
     },
   },

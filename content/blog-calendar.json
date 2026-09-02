@@ -387,7 +387,8 @@
       "relatedDripId": "perfection-skin",
       "relatedImage": "/images/drips/perfection-skin.webp",
       "readTime": 4,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-09-02"
     },
     {
       "slug": "collagen-decline-signs",
