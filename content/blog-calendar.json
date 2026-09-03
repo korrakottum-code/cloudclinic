@@ -400,7 +400,8 @@
       "relatedDripId": "celebrity-skin",
       "relatedImage": "/images/drips/celebrity-skin.webp",
       "readTime": 5,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-09-03"
     },
     {
       "slug": "weak-immune-signs",

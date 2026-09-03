@@ -62,6 +62,7 @@ export default defineConfig({
         blogVitaminCTopicalVsIv: resolve(__dirname, 'blog/skin-tips/vitamin-c-topical-vs-iv/index.html'),
         blogBComplexImportance: resolve(__dirname, 'blog/health-guide/b-complex-importance/index.html'),
         blogIvDripPricingQuality: resolve(__dirname, 'blog/drip-knowledge/iv-drip-pricing-quality/index.html'),
+        blogCollagenDeclineSigns: resolve(__dirname, 'blog/skin-tips/collagen-decline-signs/index.html'),
       },
     },
   },
