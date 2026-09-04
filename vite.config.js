@@ -63,6 +63,7 @@ export default defineConfig({
         blogBComplexImportance: resolve(__dirname, 'blog/health-guide/b-complex-importance/index.html'),
         blogIvDripPricingQuality: resolve(__dirname, 'blog/drip-knowledge/iv-drip-pricing-quality/index.html'),
         blogCollagenDeclineSigns: resolve(__dirname, 'blog/skin-tips/collagen-decline-signs/index.html'),
+        blogWeakImmuneSigns: resolve(__dirname, 'blog/health-guide/weak-immune-signs/index.html'),
       },
     },
   },

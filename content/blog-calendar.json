@@ -413,7 +413,8 @@
       "relatedDripId": "immune-booster",
       "relatedImage": "/images/drips/immune-booster.webp",
       "readTime": 4,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-09-04"
     },
     {
       "slug": "after-iv-drip-care",
