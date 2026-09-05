@@ -64,6 +64,7 @@ export default defineConfig({
         blogIvDripPricingQuality: resolve(__dirname, 'blog/drip-knowledge/iv-drip-pricing-quality/index.html'),
         blogCollagenDeclineSigns: resolve(__dirname, 'blog/skin-tips/collagen-decline-signs/index.html'),
         blogWeakImmuneSigns: resolve(__dirname, 'blog/health-guide/weak-immune-signs/index.html'),
+        blogAfterIvDripCare: resolve(__dirname, 'blog/drip-knowledge/after-iv-drip-care/index.html'),
       },
     },
   },
