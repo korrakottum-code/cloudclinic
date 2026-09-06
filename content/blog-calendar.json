@@ -439,7 +439,8 @@
       "relatedDripId": "glow-and-clear",
       "relatedImage": "/images/drips/glow-and-clear.webp",
       "readTime": 4,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-09-06"
     },
     {
       "slug": "proper-detox-guide",
