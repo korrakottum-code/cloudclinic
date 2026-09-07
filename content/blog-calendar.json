@@ -452,7 +452,8 @@
       "relatedDripId": "detox-liver-care",
       "relatedImage": "/images/drips/detox-liver-care.webp",
       "readTime": 5,
-      "status": "pending"
+      "status": "published",
+      "publishedDate": "2026-09-07"
     },
     {
       "slug": "standard-vs-premium-drip",
