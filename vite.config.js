@@ -67,6 +67,7 @@ export default defineConfig({
         blogAfterIvDripCare: resolve(__dirname, 'blog/drip-knowledge/after-iv-drip-care/index.html'),
         blogUnevenSkintoneFix: resolve(__dirname, 'blog/skin-tips/uneven-skintone-fix/index.html'),
         blogProperDetoxGuide: resolve(__dirname, 'blog/health-guide/proper-detox-guide/index.html'),
+        blogStandardVsPremiumDrip: resolve(__dirname, 'blog/drip-knowledge/standard-vs-premium-drip/index.html'),
       },
     },
   },
