@@ -10,12 +10,13 @@ import { execFileSync } from 'child_process';
 import { IV_DRIPS } from '../src/js/components.js';
 import { renderArticleHTML } from './lib/blog-article-template.js';
 import { renderBlogCard } from './lib/blog-card-template.js';
+import { scanArticles, buildRelatedMap, CATEGORY_EMOJI } from './lib/related.js';
+import { relinkAll } from './relink-blog.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const projectRoot = join(__dirname, '..');
 
 const DRIP_BY_ID = Object.fromEntries([...IV_DRIPS.standard, ...IV_DRIPS.premium].map((d) => [d.id, d]));
-const CATEGORY_EMOJI = { 'skin-tips': '✨', 'health-guide': '🌿', 'drip-knowledge': '💧' };
 
 const THAI_MONTHS = [
   'มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน',
@@ -87,12 +88,12 @@ function insertSitemapEntry(loc, publishDate) {
   writeFileSync(sitemapPath, updated);
 }
 
+// Initial related cards for the new page (relinkAll() below re-balances the whole site afterwards).
 function pickRelated(calendar, draft) {
-  const published = calendar.topics.filter((t) => t.status === 'published' && t.slug !== draft.slug);
-  const sameCategory = published.filter((t) => t.category === draft.category);
-  const otherCategory = published.filter((t) => t.category !== draft.category);
-  const picked = [...sameCategory, ...otherCategory].slice(0, 2);
-  return picked.map((t) => ({
+  const { articles } = scanArticles(projectRoot);
+  const others = articles.filter((a) => a.slug !== draft.slug);
+  const me = { slug: draft.slug, category: draft.category, dripId: draft.relatedDripId, title: draft.title, date: '' };
+  return buildRelatedMap([...others, me], 3)[draft.slug].map((t) => ({
     href: `/blog/${t.category}/${t.slug}/`,
     emoji: CATEGORY_EMOJI[t.category] || '📄',
     categoryLabel: calendar.categories[t.category]?.label || t.category,
@@ -170,6 +171,9 @@ function main() {
   entry.publishedDate = publishDate;
   writeFileSync(calendarPath, JSON.stringify(calendar, null, 2) + '\n');
   console.log('Marked calendar entry as published');
+
+  // --- Re-balance internal links: article <-> article, drip pages, homepage ---
+  relinkAll(projectRoot);
 
   console.log(`\nDone. Article live at /blog/${draft.category}/${draft.slug}/ (after build+deploy).`);
 }
