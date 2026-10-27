@@ -212,6 +212,7 @@ export function renderNavbar(activePage = '') {
         <a href="/" class="navbar__link ${activePage === 'home' ? 'active' : ''}">หน้าแรก</a>
         <a href="/iv-drip-menu/" class="navbar__link ${activePage === 'menu' ? 'active' : ''}">เมนูดริปผิว</a>
         <a href="/reviews/" class="navbar__link ${activePage === 'reviews' ? 'active' : ''}">รีวิว</a>
+        <a href="/iv-drip-khonkaen/" class="navbar__link ${activePage === 'guide' ? 'active' : ''}">คู่มือดริปผิว</a>
         <a href="/blog/" class="navbar__link ${activePage === 'blog' ? 'active' : ''}">บทความ</a>
         <a href="/about/" class="navbar__link ${activePage === 'about' ? 'active' : ''}">เกี่ยวกับเรา</a>
         <a href="${CONTACT.lineLink}" target="_blank" class="btn btn--line btn--sm navbar__cta">💬 แชท LINE</a>
@@ -288,6 +289,7 @@ export function renderFooter() {
           <a href="/iv-drip/glow-and-clear/" class="footer__link">Glow & Clear Drip</a>
           <a href="/iv-drip/immune-booster/" class="footer__link">Immune Booster Drip</a>
           <h4 class="footer__heading" style="margin-top: var(--space-6)">เพิ่มเติม</h4>
+          <a href="/iv-drip-khonkaen/" class="footer__link">📖 ดริปผิว ขอนแก่น ที่ไหนดี (คู่มือ)</a>
           <a href="/reviews/" class="footer__link">⭐ รีวิวลูกค้า</a>
           <a href="/about/" class="footer__link">ℹ️ เกี่ยวกับเรา</a>
         </div>

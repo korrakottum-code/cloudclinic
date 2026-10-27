@@ -11,6 +11,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         notFound: resolve(__dirname, '404.html'),
         ivDripMenu: resolve(__dirname, 'iv-drip-menu/index.html'),
+        ivDripKhonkaen: resolve(__dirname, 'iv-drip-khonkaen/index.html'),
         about: resolve(__dirname, 'about/index.html'),
         reviews: resolve(__dirname, 'reviews/index.html'),
         vitalitySkin: resolve(__dirname, 'iv-drip/vitality-skin/index.html'),
