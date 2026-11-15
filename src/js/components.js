@@ -305,7 +305,7 @@ export function renderFooter() {
       </div>
       <div class="footer__bottom">
         <div class="footer__copyright">© 2026 Cloud Clinic ขอนแก่น. All rights reserved.</div>
-        <div class="footer__seo-tags">ดริปผิว ขอนแก่น | ฉีดผิว ขอนแก่น | วิตามินผิว ขอนแก่น | คลินิกความงาม ขอนแก่น | รักษาสิว ขอนแก่น | ลดรอยดำ ขอนแก่น | ดริปวิตามินแก้แฮงค์</div>
+        <div class="footer__seo-tags"><a href="/" style="color:inherit">ดริปผิว ขอนแก่น</a> | <a href="/iv-drip-khonkaen/" style="color:inherit">ดริปผิว ขอนแก่น ที่ไหนดี</a> | <a href="/iv-drip-menu/" style="color:inherit">ฉีดผิว ขอนแก่น</a> | <a href="/iv-drip/glow-and-clear/" style="color:inherit">วิตามินผิว ขอนแก่น</a> | <a href="/about/" style="color:inherit">คลินิกความงาม ขอนแก่น</a> | <a href="/iv-drip/skin-detox-acne-clear/" style="color:inherit">ดริปลดสิว ขอนแก่น</a> | <a href="/iv-drip/party-recovery/" style="color:inherit">ดริปวิตามินแก้แฮงค์</a></div>
       </div>
     </div>
   `;
