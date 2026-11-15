@@ -103,6 +103,12 @@ never hard-sell. Structure:
 ```
 
 Field notes:
+- Optional images: `heroImage` (top of article, also used as og:image) and per-section
+  `image`, each `{ "src": "/images/blog/<slug>-hero.webp", "alt": "...", "width": 1200,
+  "height": 800, "caption": "optional" }`. Put files in `public/images/blog/`. Use real clinic
+  photos for anything presented as Cloud Clinic itself; generated images must be generic
+  illustrations (no text, no before/after, no needles in skin) with alt text that does not
+  claim they show the clinic.
 - `category` must be one of the keys in `content/blog-calendar.json`'s `categories`.
 - `sections` needs at least 3 entries. Each needs `paragraphs` and/or `list` (at least one).
 - `relatedDripId` must exist in `IV_DRIPS` inside `src/js/components.js`.

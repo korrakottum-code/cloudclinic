@@ -20,8 +20,18 @@ function renderList(items = []) {
   return `          <ul>\n${lis}\n          </ul>`;
 }
 
+// Optional figure: { src, alt, width, height, caption? } — width/height required to avoid CLS.
+function renderFigure(img, { eager = false } = {}) {
+  if (!img) return '';
+  const cap = img.caption ? `\n            <figcaption>${escapeHtml(img.caption)}</figcaption>` : '';
+  return `          <figure class="article-figure">
+            <img src="${img.src}" alt="${escapeHtml(img.alt)}" width="${img.width}" height="${img.height}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">${cap}
+          </figure>`;
+}
+
 function renderSection(section) {
   const parts = [`          <h2>${section.heading}</h2>`];
+  if (section.image) parts.push(renderFigure(section.image));
   if (section.paragraphs?.length) parts.push(renderParagraphs(section.paragraphs));
   if (section.list?.length) parts.push(renderList(section.list));
   return parts.join('\n');
@@ -54,6 +64,7 @@ export function renderArticleHTML(draft, ctx) {
   const { categoryMeta, drip, related, publishDate, publishDateThai } = ctx;
   const canonical = `${SITE}/blog/${draft.category}/${draft.slug}/`;
   const sectionsHtml = draft.sections.map(renderSection).join('\n\n');
+  const ogImage = draft.heroImage ? `${SITE}${draft.heroImage.src}` : `${SITE}/images/og-cover.jpg`;
 
   return `<!DOCTYPE html>
 <html lang="th">
@@ -68,7 +79,7 @@ export function renderArticleHTML(draft, ctx) {
   <meta property="og:description" content="${escapeHtml(draft.ogDescription)}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="${canonical}">
-  <meta property="og:image" content="${SITE}/images/og-cover.jpg">
+  <meta property="og:image" content="${ogImage}">
   <link rel="icon" href="/favicon-transparent.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon-transparent.png">
   <link rel="stylesheet" href="/src/styles/index.css">
@@ -81,6 +92,7 @@ export function renderArticleHTML(draft, ctx) {
     "author": {"@type": "Organization", "name": "Cloud Clinic ขอนแก่น"},
     "publisher": {"@type": "Organization", "name": "Cloud Clinic ขอนแก่น", "url": "${SITE}"},
     "url": "${canonical}",
+    "image": "${ogImage}",
     "datePublished": "${publishDate}",
     "dateModified": "${publishDate}"
   }
@@ -108,6 +120,10 @@ ${FONTS_HEAD}
     .article-content li { font-size: var(--text-base); color: var(--color-text-light); line-height: 1.8; margin-bottom: var(--space-2); }
     .highlight-box { background: var(--gradient-sky); border-radius: var(--radius-xl); padding: var(--space-6); margin: var(--space-6) 0; border-left: 4px solid var(--color-primary); }
     .highlight-box p { margin: 0; font-weight: 600; color: var(--color-text); }
+    .article-figure { margin: var(--space-6) 0; }
+    .article-figure img { width: 100%; height: auto; border-radius: var(--radius-xl); display: block; }
+    .article-figure figcaption { font-size: var(--text-sm); color: var(--color-text-muted); text-align: center; margin-top: var(--space-2); }
+    .article-content a { color: var(--color-primary); }
     .related-articles { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-4); margin-top: var(--space-6); }
     .related-card { background: white; border-radius: var(--radius-xl); padding: var(--space-5); border: 1px solid var(--color-border-light); text-decoration: none; color: inherit; display: flex; gap: var(--space-3); align-items: flex-start; transition: box-shadow 0.2s; }
     .related-card:hover { box-shadow: var(--shadow-md); }
@@ -147,6 +163,7 @@ ${TRACKING_BODY_NOSCRIPT}
           <div class="highlight-box">
             <p>${draft.highlightBox}</p>
           </div>
+${renderFigure(draft.heroImage, { eager: true })}
 
 ${sectionsHtml}
 
