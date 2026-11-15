@@ -69,6 +69,7 @@ export default defineConfig({
         blogUnevenSkintoneFix: resolve(__dirname, 'blog/skin-tips/uneven-skintone-fix/index.html'),
         blogProperDetoxGuide: resolve(__dirname, 'blog/health-guide/proper-detox-guide/index.html'),
         blogStandardVsPremiumDrip: resolve(__dirname, 'blog/drip-knowledge/standard-vs-premium-drip/index.html'),
+        blogKhonKaenDripPrice: resolve(__dirname, 'blog/drip-knowledge/khon-kaen-drip-price/index.html'),
       },
     },
   },

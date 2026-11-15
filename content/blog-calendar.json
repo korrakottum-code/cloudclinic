@@ -472,8 +472,9 @@
       "slug": "khon-kaen-drip-price",
       "category": "drip-knowledge",
       "title": "ดริปผิว ขอนแก่น ราคาเท่าไหร่ สรุป 12 สูตรในหน้าเดียว",
-      "status": "pending",
-      "angle": "คีย์เวิร์ดหลัก: ดริปผิว ขอนแก่น ราคา. ตารางสรุปทุกสูตรจาก IV_DRIPS (ราคาต้องตรง components.js เท่านั้น) แยก Standard/Premium เหมาะกับใคร ลิงก์ทุกหน้า /iv-drip/<slug>/ และ /iv-drip-menu/ ปิดด้วย CTA LINE"
+      "status": "published",
+      "angle": "คีย์เวิร์ดหลัก: ดริปผิว ขอนแก่น ราคา. ตารางสรุปทุกสูตรจาก IV_DRIPS (ราคาต้องตรง components.js เท่านั้น) แยก Standard/Premium เหมาะกับใคร ลิงก์ทุกหน้า /iv-drip/<slug>/ และ /iv-drip-menu/ ปิดด้วย CTA LINE",
+      "publishedDate": "2026-11-15"
     },
     {
       "slug": "which-drip-formula",
