@@ -70,6 +70,7 @@ export default defineConfig({
         blogProperDetoxGuide: resolve(__dirname, 'blog/health-guide/proper-detox-guide/index.html'),
         blogStandardVsPremiumDrip: resolve(__dirname, 'blog/drip-knowledge/standard-vs-premium-drip/index.html'),
         blogKhonKaenDripPrice: resolve(__dirname, 'blog/drip-knowledge/khon-kaen-drip-price/index.html'),
+        blogWhichDripFormula: resolve(__dirname, 'blog/drip-knowledge/which-drip-formula/index.html'),
       },
     },
   },
