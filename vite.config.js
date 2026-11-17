@@ -71,6 +71,7 @@ export default defineConfig({
         blogStandardVsPremiumDrip: resolve(__dirname, 'blog/drip-knowledge/standard-vs-premium-drip/index.html'),
         blogKhonKaenDripPrice: resolve(__dirname, 'blog/drip-knowledge/khon-kaen-drip-price/index.html'),
         blogWhichDripFormula: resolve(__dirname, 'blog/drip-knowledge/which-drip-formula/index.html'),
+        blogFirstVisitCloudClinic: resolve(__dirname, 'blog/drip-knowledge/first-visit-cloud-clinic/index.html'),
       },
     },
   },
