@@ -72,6 +72,7 @@ export default defineConfig({
         blogKhonKaenDripPrice: resolve(__dirname, 'blog/drip-knowledge/khon-kaen-drip-price/index.html'),
         blogWhichDripFormula: resolve(__dirname, 'blog/drip-knowledge/which-drip-formula/index.html'),
         blogFirstVisitCloudClinic: resolve(__dirname, 'blog/drip-knowledge/first-visit-cloud-clinic/index.html'),
+        blogDripVsSkinInjectionVsOral: resolve(__dirname, 'blog/skin-tips/drip-vs-skin-injection-vs-oral/index.html'),
       },
     },
   },
