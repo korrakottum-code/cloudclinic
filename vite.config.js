@@ -73,6 +73,7 @@ export default defineConfig({
         blogWhichDripFormula: resolve(__dirname, 'blog/drip-knowledge/which-drip-formula/index.html'),
         blogFirstVisitCloudClinic: resolve(__dirname, 'blog/drip-knowledge/first-visit-cloud-clinic/index.html'),
         blogDripVsSkinInjectionVsOral: resolve(__dirname, 'blog/skin-tips/drip-vs-skin-injection-vs-oral/index.html'),
+        blogCelebrityVsPerfectionSkin: resolve(__dirname, 'blog/skin-tips/celebrity-vs-perfection-skin/index.html'),
       },
     },
   },
