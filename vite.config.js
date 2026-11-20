@@ -74,6 +74,7 @@ export default defineConfig({
         blogFirstVisitCloudClinic: resolve(__dirname, 'blog/drip-knowledge/first-visit-cloud-clinic/index.html'),
         blogDripVsSkinInjectionVsOral: resolve(__dirname, 'blog/skin-tips/drip-vs-skin-injection-vs-oral/index.html'),
         blogCelebrityVsPerfectionSkin: resolve(__dirname, 'blog/skin-tips/celebrity-vs-perfection-skin/index.html'),
+        blogSlimAndBurnExplained: resolve(__dirname, 'blog/health-guide/slim-and-burn-explained/index.html'),
       },
     },
   },
