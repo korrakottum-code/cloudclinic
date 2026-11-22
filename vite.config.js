@@ -76,6 +76,7 @@ export default defineConfig({
         blogCelebrityVsPerfectionSkin: resolve(__dirname, 'blog/skin-tips/celebrity-vs-perfection-skin/index.html'),
         blogSlimAndBurnExplained: resolve(__dirname, 'blog/health-guide/slim-and-burn-explained/index.html'),
         blogKkuGraduationSkinPlan: resolve(__dirname, 'blog/skin-tips/kku-graduation-skin-plan/index.html'),
+        blogPartyRecoveryKhonKaen: resolve(__dirname, 'blog/health-guide/party-recovery-khon-kaen/index.html'),
       },
     },
   },

@@ -528,8 +528,9 @@
       "slug": "party-recovery-khon-kaen",
       "category": "health-guide",
       "title": "ดริปหลังปาร์ตี้ ขอนแก่น Party Recovery ช่วยอะไรได้บ้าง",
-      "status": "pending",
-      "angle": "คีย์เวิร์ด: ดริปแก้แฮงค์ ขอนแก่น. เน้นการฟื้นฟูร่างกายและการดื่มอย่างรับผิดชอบ ไม่ใช้คำว่ารักษา ลิงก์ /iv-drip/party-recovery/ และ alcohol-recovery-needs"
+      "status": "published",
+      "angle": "คีย์เวิร์ด: ดริปแก้แฮงค์ ขอนแก่น. เน้นการฟื้นฟูร่างกายและการดื่มอย่างรับผิดชอบ ไม่ใช้คำว่ารักษา ลิงก์ /iv-drip/party-recovery/ และ alcohol-recovery-needs",
+      "publishedDate": "2026-11-22"
     },
     {
       "slug": "night-shift-vitamin-drip",
