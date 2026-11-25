@@ -78,6 +78,7 @@ export default defineConfig({
         blogKkuGraduationSkinPlan: resolve(__dirname, 'blog/skin-tips/kku-graduation-skin-plan/index.html'),
         blogPartyRecoveryKhonKaen: resolve(__dirname, 'blog/health-guide/party-recovery-khon-kaen/index.html'),
         blogNightShiftVitaminDrip: resolve(__dirname, 'blog/health-guide/night-shift-vitamin-drip/index.html'),
+        blogDripCoursePlan1Month: resolve(__dirname, 'blog/drip-knowledge/drip-course-plan-1-month/index.html'),
       },
     },
   },

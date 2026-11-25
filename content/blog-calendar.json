@@ -558,8 +558,9 @@
       "slug": "drip-course-plan-1-month",
       "category": "drip-knowledge",
       "title": "ดริปผิวกี่ครั้งเห็นผล วางแผนคอร์ส 1 เดือนแบบไม่เปลือง",
-      "status": "pending",
-      "angle": "คีย์เวิร์ด: ดริปผิว กี่ครั้งเห็นผล. ต่อยอดจาก iv-drip-frequency แต่เน้นการวางแผนงบ ไม่รับประกันผล ลิงก์เมนูและ CTA LINE"
+      "status": "published",
+      "angle": "คีย์เวิร์ด: ดริปผิว กี่ครั้งเห็นผล. ต่อยอดจาก iv-drip-frequency แต่เน้นการวางแผนงบ ไม่รับประกันผล ลิงก์เมนูและ CTA LINE",
+      "publishedDate": "2026-11-25"
     }
   ]
 }
